@@ -1,0 +1,102 @@
+CONVERT Version 1.0                                                   26/03/2015
+
+CONVERT Info Sheet
+
+CONVERT is a Phyton application which implements the conversions between the
+psychometric diagnostic instruments used to interview help-seeking subjects
+for a clinical high risk for psychosis (HR), according to the algorithm and
+equipercentile linking table proposed by Fusar-Poli et al. in Schizophr Bull
+2015 (under review).
+
+When using CONVERT please cite: Fusar-Poli P, Cappucciati M, Beverly Q,
+Rutigliano G, Bonoldi I, Lelli J, Kaar SJ, Gago E, Rocchetti M, Rashmi P,
+Bhavsar V, Tognin S, Badger S, Calem M, Perez J, McGuire P.
+TOWARDS A STANDARD PSYCHOMETRIC DIAGNOSTIC INTERVIEW FOR PEOPLE AT HIGH
+CLINICAL RISK FOR PSYCHOSIS: CAARMS vs SIPS. Schizophrenia Bulletin 2015
+(under review).
+
+To start the software execute the convert.py in the command prompt.
+The software takes as input a *.xlsx file (attached Input_Template) and
+produces as output a *.xlsx file.
+Clicking on File menu/Open, the user can browse the directories and open
+the selected input file.
+
+Functions included in the software are:
+
+ - CAARMS to SIPS
+ - SIPS to CAARMS
+
+For each of them the software provides the conversion of the diagnostic
+subgroup (columns “CAARMS Main Diagnosis” and “SIPS Main Diagnosis”)
+across the two instruments, and of the individual scores of the severity
+or frequency subscales. The latter were provided for analytical purposes
+only (e.g., to correlate severity/frequency with other external variables).
+We do not recommend to use the converted severity or frequency to assign
+the diagnostic subgroup as a first step. The functions are accessible via
+the Run pull-down menu.
+
+The supported input diagnostic subgroups are:
+
+ 1. HR –
+ 2. GRD
+ 3. GRD/APS
+ 4. APS
+ 5. BLIPS
+ 6. GRD/BLIPS
+ 7. Psychosis
+
+The supported output diagnostic subgroups are:
+
+ 1. HR –
+ 2. GRD
+ 3. APS
+ 4. BLIPS
+ 5. psychosis
+
+The GRD+APS and GRD+BLIPS group have been combined with the APS and BLIPS
+group respectively, as suggested by Nelson et al. 2011 [1].
+Besides the main diagnosis and the individual ratings, in order to proceed
+to the conversion of cases, the software requires the following clinical
+information, which should be part of the routine psychometric assessment,
+namely:
+
+1. Comorbidities which can better explain the symptoms (column “Symptoms B/E
+Comorbidities”, values: yes/no), required to convert APS from CAARMS to SIPS
+and HR – from SIPS to CAARMS [2], [3];
+
+2. Disorganising and dangerous symptoms (column “DD Symptoms”, values:
+yes/no), required to convert BLIPS from CAARMS to SIPS and psychosis from SIPS
+to CAARMS [2], [3];
+
+3. GAF drop > 30% (column “GAF drop > 30%”, values: yes/no), required to convert
+APS from SIPS to CAARMS. Although the presence of a GAF drop greater than 30%
+is a CAARMS requirement also for the BLIPS category, we considered it redundant,
+i.e. we assume that the presence of a BLIPS itself leads to a GAF drop > 30%
+[2], [3].
+
+When these data are missing, the user will be given warning messages. The user
+can then decide to interrupt the program, enter the data in the input *.xlsx
+file and rerun the program, or if the data are not available, to proceed and
+exclude the cases. In both cases the subjects with missing info will be listed
+in the main screen.
+The Save as item in the File menu allows to save the output *.xlsx file in the
+selected directory.
+The Help pull-down menu displays a basic guide about the software use.
+
+References:
+
+[1] Nelson B, Yuen K, Yung AR. Ultra high risk (UHR) for psychosis criteria:
+are there different levels of risk for transition to psychosis? Schizophrenia
+research Jan 2011;125(1):62-68.
+
+[2] Yung AR, Phillips LJ, Simmons MB, Ward J, Thompson P, French P, McGorry
+P. CAARMS. Comprehensive Assessment of at Risk Mental States. Parkville
+Victoria, The PACE Clinic, ORYGEN Research Centre, University of Melbourne,
+Department of Psychiatry; 2006.
+
+[3] McGlashan T, Walsh B, Woods S. The Psychosis-Risk Syndrome. Handbook for
+Diagnosis and Follow-Up. New York: Oxford University Press; 2010.
+
+This file is part of CONVERT package.
+Copyright (C) 2015 Grazia Rutigliano grazia.rutigliano.gr@gmail.com;
+Juri Lelli juri.lelli@gmail.com; Paolo Fusar-Poli paolo.fusar-poli@kcl.ac.uk.
