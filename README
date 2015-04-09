@@ -69,10 +69,8 @@ yes/no), required to convert BLIPS from CAARMS to SIPS and psychosis from SIPS
 to CAARMS [2], [3];
 
 3. GAF drop > 30% (column “GAF drop > 30%”, values: yes/no), required to convert
-APS from SIPS to CAARMS. Although the presence of a GAF drop greater than 30%
-is a CAARMS requirement also for the BLIPS category, we considered it redundant,
-i.e. we assume that the presence of a BLIPS itself leads to a GAF drop > 30%
-[2], [3].
+APS from SIPS to CAARMS. Please note GAF drop not required to convert BLIPS
+category from SIPS to CAARMS [2], [3].
 
 When these data are missing, the user will be given warning messages. The user
 can then decide to interrupt the program, enter the data in the input *.xlsx
