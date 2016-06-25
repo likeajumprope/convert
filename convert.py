@@ -22,7 +22,7 @@
 from Tkinter import Frame, Tk, BOTH, Text, Menu, END, Scrollbar
 import tkFileDialog
 import tkMessageBox
-#from CaarmsSips import CaarmsSips
+from CaarmsSips import CaarmsSips
 import openpyxl
 
 help = """
