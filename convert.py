@@ -19,9 +19,9 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
-from Tkinter import Frame, Tk, BOTH, Text, Menu, END, Scrollbar
-import tkFileDialog
-import tkMessageBox
+from tkinter import Frame, Tk, BOTH, Text, Menu, END, Scrollbar
+import tkinter.filedialog as tkFileDialog
+import tkinter.messagebox as tkMessageBox
 from CaarmsSips import CaarmsSips
 import openpyxl
 
