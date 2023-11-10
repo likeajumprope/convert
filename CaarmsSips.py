@@ -124,7 +124,7 @@ class CaarmsSips(object):
         # Convert HR - (P1-P4 < 3) to HR - 
         sips_hr_minus = df_caarms[crit_hr_minus & ~crit_p2]
         sips_hr_minus['SIPS Main Diagnosis'] = 'HR -'
-        print sips_hr_minus[self.labels]
+        print(sips_hr_minus[self.labels])
 
         # Convert HR - (any of P1-P4 > 2 but onset > 12mo) to HR -
         sips_tmp = df_caarms[crit_hr_minus & crit_p2 & crit_no_onset]
@@ -139,7 +139,7 @@ class CaarmsSips(object):
         sips_tmp = df_caarms[crit_grd & ~crit_GAF]
         sips_tmp['SIPS Main Diagnosis'] = 'HR -'
         sips_hr_minus = sips_hr_minus.append(sips_tmp)
-        print sips_hr_minus[self.labels]
+        print(sips_hr_minus[self.labels])
 
         # Convert GRD to GRD
         sips_grd = df_caarms[crit_grd & crit_GAF]
